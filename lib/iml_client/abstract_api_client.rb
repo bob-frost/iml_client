@@ -1,4 +1,5 @@
 require 'httparty'
+require 'json'
 
 require 'iml_client/errors'
 require 'iml_client/result'
@@ -83,7 +84,7 @@ module ImlClient
     end
 
     def url_for(key)
-      URI.join "https://#{host}", ImlClient::API_PATHS[key]
+      URI.join("https://#{host}", ImlClient::API_PATHS[key]).to_s
     end
 
     def response_normalization_rules_for(key)

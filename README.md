@@ -146,3 +146,6 @@ client.services
 - [iml.ru](http://iml.ru/) - Оффициальный сайт IML.
 - [api.iml.ru](http://api.iml.ru/) - Документация к API IML.
 - [list.iml.ru](http://list.iml.ru/) - Документация к API справочного сервиса IML.
+
+
+Разработано при поддержке интернет-магазина настольных игр "[Танго и Кэш](http://tango-cash.ru/)"

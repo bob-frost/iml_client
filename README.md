@@ -143,7 +143,7 @@ client.services
 - Тесты
 
 ## Ссылки
-- [iml.ru](http://iml.ru/) - Оффициальный сайт IML.
+- [iml.ru](http://iml.ru/) - Сайт IML.
 - [api.iml.ru](http://api.iml.ru/) - Документация к API IML.
 - [list.iml.ru](http://list.iml.ru/) - Документация к API справочного сервиса IML.
 

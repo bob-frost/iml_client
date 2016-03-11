@@ -56,6 +56,10 @@ module ImlClient
       list_api_client.services
     end
 
+    def zones
+      list_api_client.zones
+    end
+
     def test_mode?
       @test_mode
     end

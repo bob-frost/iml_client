@@ -18,7 +18,8 @@ module ImlClient
     pickup_points:             'SD',
     status_types:              'status',
     post_codes:                'PostCode',
-    services:                  'service'
+    services:                  'service',
+    zones:                     'zone'
   }.freeze
 
   RESPONSE_NORMALIZATION_RULES = {

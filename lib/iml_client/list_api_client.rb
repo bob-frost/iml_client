@@ -60,6 +60,10 @@ module ImlClient
       request_and_normalize url_for(:services), :get, nil, nil, response_normalization_rules_for(:services), []
     end
 
+    def zones
+      request_and_normalize url_for(:zones), :get, nil, nil, response_normalization_rules_for(:zones), []
+    end
+
     protected
 
     def host

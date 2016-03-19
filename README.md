@@ -139,6 +139,11 @@ client.post_codes
 client.services
 ```
 
+#### Список зон доставки
+```ruby
+client.zones
+```
+
 ## TODO
 - Тесты
 

@@ -5,11 +5,14 @@ require 'iml_client/util'
 module ImlClient
   class RestApiClient < AbstractApiClient
 
+    DEFAULT_TIMEOUT = 1
+
     def initialize(login, password, options = {})
       @login    = login
       @password = password
       options = Util.symbolize_keys options
       @test_mode = !!options[:test_mode]
+      @timeout = options[:timeout] || DEFAULT_TIMEOUT
     end
 
     def orders(params = {})

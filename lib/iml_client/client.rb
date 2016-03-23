@@ -10,6 +10,7 @@ module ImlClient
       @password = password
       options = Util.symbolize_keys options
       @test_mode = !!options[:test_mode]
+      @timeout = options[:timeout]
     end
 
     def orders(params = {})
@@ -67,11 +68,11 @@ module ImlClient
     private
 
     def rest_api_client
-      @rest_api_client ||= RestApiClient.new @login, @password, test_mode: test_mode?
+      @rest_api_client ||= RestApiClient.new @login, @password, test_mode: test_mode?, timeout: @timeout
     end
 
     def list_api_client
-      @list_api_client ||= ListApiClient.new @login, @password
+      @list_api_client ||= ListApiClient.new @login, @password, timeout: @timeout
     end
 
   end

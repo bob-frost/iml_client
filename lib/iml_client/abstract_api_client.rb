@@ -115,6 +115,8 @@ module ImlClient
         end
       end
 
+      request_params.merge! timeout: @timeout
+
       begin
         response = HTTParty.send method, url, request_params
         if response.code == 200

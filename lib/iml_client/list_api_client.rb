@@ -4,9 +4,12 @@ require 'iml_client/util'
 module ImlClient
   class ListApiClient < AbstractApiClient
 
-    def initialize(login, password)
+    DEFAULT_TIMEOUT = 1
+
+    def initialize(login, password, options = {})
       @login    = login
       @password = password
+      @timeout  = options[:timeout] || DEFAULT_TIMEOUT
     end
 
     def locations(params = {})
